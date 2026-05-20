@@ -3,9 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --secondary:#fffaf5;
+    --primary:#E5E5E5;
+    --gray:#363958;
+    --orange:#ff8367;
+}
 @font-face {
     font-family: "Roboto";
-    src: url("./fonts/Roboto_Condensed-Bold.ttf");
+    src: url("./fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+    font-family: "Bebas";
+    src: url("./fonts/BebasNeue-Regular.otf");
 }
 .logo img{
     width: 7%;
@@ -16,17 +26,22 @@
     gap: 10px;
 }
 header{
+    position: sticky;
+    top: 0;
+    background-color: #fffaf5;
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    box-shadow: 0px 10px 20px grey;
-    padding: 20px 40px;
-    justify-content: space-around;
-background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    padding: 10px 90px;
+
 
 }
 .navlinks{
     display: flex;
+    align-items: center;
 gap: 50px;
+font-weight: bold;
 }
 .navlinks li{
     list-style: none;
@@ -47,11 +62,14 @@ span{
 }
 .herodiv{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+   width: 100%;
+   padding: 40px 0px;
 }
 .herodiv img{
-    width: 70%;
-    padding: 40px ;
+    width: 60%;
+    
 }
 .content{
     display: flex;
@@ -60,15 +78,190 @@ span{
     gap: 20px;
     
 }
-.herodiv h1{
-font-family: Roboto;
-font-size: 50px;
+.content p{
+    font-family: Roboto;
 }
-button{
-    width: 80px;
-    height: 40px;
-    text-transform: uppercase;
-    border: 1px solid black;
-    background-color: rgb(69, 69, 234);
+.herodiv h1{
+font-family: Bebas;
+font-size: 75px;
+font-weight: lighter;
+
+}
+.content button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    width:100px ;
+    height: 40px; 
+    color: white;
+    text-align: center;
+    font-size: medium;
+    background-color: #3D4FF3;
     border-radius: 10%;
+    font-family: roboto;
+    cursor: pointer;
+}
+.content button:hover{
+     width:102px ;
+    height: 42px; 
+     background-color: #2a3bcd;
+}
+
+ .casual{
+    width: 100%;
+    background-color: var(--primary);
+    padding: 30px 62px;
+    
+ }
+.heading h1{
+    font-family: Bebas;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #363958;
+    padding: 10px;
+}
+.shoe1{
+    background-color: white;
+    width: 32%;
+    padding: 12px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.shoe1 img{
+width: 100%;
+}
+.shoeImg{
+    background-color:var(--primary);
+    border-radius: 20px;
+}
+.shoecontent h1{
+font-family: roboto;
+font-weight: bold;
+font-size: x-large;
+color: var(--gray);
+}
+.shoecontent{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ .shoecontent p{
+    font-family: Roboto;
+    font-weight: 400px;
+ }
+ .btn button{
+    border: none;
+    outline: none;
+    width:100px ;
+    height: 40px; 
+    color: white;
+    text-align: center;
+    font-size: medium;
+    background-color: #3D4FF3;
+    border-radius: 5%;
+    font-family: roboto;
+    cursor: pointer;
+ }
+ .btn button:hover{
+      width:102px ;
+    height: 42px; 
+     background-color: #2a3bcd;
+ }
+ .btn{
+    display: flex;
+    gap: 178px;
+ }
+ .btn span{
+    font-size: x-large;
+    font-weight: bold;
+color: var(--orange);
+ }
+ .shoe2{
+    background-color: white;
+    width: 32%;
+    padding: 12px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.shoe2 img{
+width: 100%;
+}
+.shoe3{
+    background-color: white;
+    width: 32%;
+    padding: 12px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.shoe3 img{
+width: 100%;
+}
+.shoes{
+    display: flex;
+    justify-content: space-around;
+}
+.Formals{
+     width: 100%;
+    background-color: var(--primary);
+    padding: 25px 62px;
+}
+.shoeImgF{
+    border-radius: 20px;
+}
+.features{
+    background-color: var(--primary);
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    /* gap: 50px; */
+}
+.faetures .content{
+      display: flex;
+    flex-direction: column;
+    gap: 20px;
+width: 100%;
+}
+.container{
+    background-color: white;
+    display: flex;
+    text-align: left;
+     gap: 40px;
+    width:80%;
+    height: 150px;
+    padding: 40px 10px 10px 10px;
+    border-radius: 3%;
+}
+.icons{
+    width:20%;
+    height: 60%;
+    padding-left: 20px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.text h3{
+    font-family: Roboto;
+    color: var(--gray);
+}
+.text p{
+      font-family: Roboto;
+    color: var(--gray);
+    font-size: 14px;
+}
+.image img{
+    width: 550px;
 }
