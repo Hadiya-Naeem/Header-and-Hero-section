@@ -260,7 +260,7 @@ width: 100%;
 .text p{
       font-family: Roboto;
     color: var(--gray);
-    font-size: 14px;
+    font-size: 13px;
 }
 .image img{
     width: 550px;
